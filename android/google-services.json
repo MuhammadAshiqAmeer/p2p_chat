@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "1082983178424",
+    "project_id": "p2p-chat-3fd4f",
+    "storage_bucket": "p2p-chat-3fd4f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1082983178424:android:1de2d624e1b9fa5834144d",
+        "android_client_info": {
+          "package_name": "com.example.p2p_chat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1082983178424-bg07horqloohueehckmjb7sn3iaerb2p.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.p2p_chat",
+            "certificate_hash": "4d44628995abcc166d968879611ced4aec46b9dd"
+          }
+        },
+        {
+          "client_id": "1082983178424-pl5hdfrk5kagvcjd7b7c013a9kvdm5k1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAATAAlrPT76tQ99z9TRppOIVIRswophW4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1082983178424-pl5hdfrk5kagvcjd7b7c013a9kvdm5k1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
