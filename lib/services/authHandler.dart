@@ -10,7 +10,7 @@ class authHandler{
       stream: FirebaseAuth.instance.authStateChanges(),
       builder: (BuildContext context,snapshot){
         if(snapshot.hasData){
-          return listUser();
+          return ListUser();
         }
         else{
           return RegisterUser();

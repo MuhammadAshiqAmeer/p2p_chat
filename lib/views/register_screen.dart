@@ -24,16 +24,12 @@ class _RegisterUserState extends State<RegisterUser> {
         child: Column(
           mainAxisSize: MainAxisSize.min,
           children: [
-            SizedBox(
-              height: 100,
-            ),
+            SizedBox(height: 100,),
             Image(
               image: AssetImage('assets/images/log.png'),
               height: 70,
             ),
-            SizedBox(
-              height: 80,
-            ),
+            SizedBox(height: 80,),
              TextField(
               style: textFieldStyle(),
               keyboardType: TextInputType.phone,
@@ -54,9 +50,7 @@ class _RegisterUserState extends State<RegisterUser> {
                 });
               },
             ):Container(),
-            SizedBox(
-              height: 100,
-            ),
+            SizedBox(height: 100,),
             GestureDetector(
               child: Container(
                 alignment: Alignment.center,
@@ -76,9 +70,7 @@ class _RegisterUserState extends State<RegisterUser> {
                 codeSent ? authHandler().signInWithOTP(smsCode, verificationId):verifyPhoneNo(phoneNo);
               },
             ),
-            SizedBox(
-              height: 20,
-            ),
+            SizedBox(height: 20,),
             Text(
               "Direct Connection",
               style: TextStyle(
