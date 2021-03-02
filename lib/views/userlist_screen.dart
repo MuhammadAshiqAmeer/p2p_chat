@@ -1,31 +1,55 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:p2p_chat/widgets/appBar.dart';
+import 'package:p2p_chat/widgets/recent_chats.dart';
 
-class listUser extends StatefulWidget {
+class ListUser extends StatefulWidget {
   @override
-  _listUserState createState() => _listUserState();
+  _ListUserState createState() => _ListUserState();
 }
 
-class _listUserState extends State<listUser> {
+class _ListUserState extends State<ListUser> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: appBarMain(context),
-      body: SingleChildScrollView(
-        padding: EdgeInsets.symmetric(horizontal: 24),
-        child: new Center(
-          child: Column(
-            mainAxisSize: MainAxisSize.min,
-            children: [
-              Text(
-                'list user',
-                textAlign: TextAlign.center,
-                style: TextStyle(color: Colors.white, fontSize: 15),
-              ),
-            ],
+      backgroundColor: Theme.of(context).primaryColor,
+      appBar: AppBar(
+        leading: IconButton(
+          icon: Icon(Icons.menu),
+          iconSize: 30.0,
+          color: Colors.white,
+          onPressed: () {},
+        ),
+        title: Text(
+          'Chats',
+          style: TextStyle(
+            fontSize: 17.0,
+            fontWeight: FontWeight.bold,
           ),
         ),
+        elevation: 0.0,
+        actions: <Widget>[
+          IconButton(
+            icon: Icon(Icons.search),
+            iconSize: 30.0,
+            color: Colors.white,
+            onPressed: () {},
+          ),
+        ],
+      ),
+      body: Column(
+        children: <Widget>[
+          Expanded(
+            child: Container(
+              decoration: BoxDecoration(
+                color: Theme.of(context).accentColor,
+              ),
+              child: Column(
+                children: <Widget>[
+                  RecentChats(),
+                ],
+              ),
+            ),
+          ),
+        ],
       ),
     );
   }
